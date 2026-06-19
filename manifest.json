@@ -1,0 +1,37 @@
+{
+  "name": "erics-engineering-wisdom",
+  "version": "2.0.0",
+  "description": "基于Eric 12年汽车零部件研发一线经验（覆盖NVH、电机、齿轮传动三大核心领域）的工程问题精准诊断与方案推荐技能，专为汽车工程场景设计，避免AI空泛回答，所有建议均锚定生产环境实际验证过的路径。",
+  "author": "Eric (网瘾中年)",
+  "repository": "https://github.com/yourusername/erics-engineering-wisdom",
+  "keywords": ["汽车工程", "NVH", "电机设计", "齿轮传动", "工程诊断", "汽车零部件"],
+  "categories": ["engineering", "automotive", "diagnosis"],
+  "triggers": [
+    "工程问题",
+    "NVH问题",
+    "电机设计",
+    "齿轮传动",
+    "异音诊断",
+    "振动分析",
+    "声品质"
+  ],
+  "dependencies": {
+    "skills": [
+      "motor-expert",
+      "nvh-expert",
+      "gear-expert",
+      "innovation-expert",
+      "cbi-innovation"
+    ]
+  },
+  "installation": {
+    "method": "zip",
+    "url": "https://www.autodevai.cn/ai-tools/e5e2645a-db20-4f21-91f1-a460ace5979e/download"
+  },
+  "metadata": {
+    "experience_years": 12,
+    "domains": ["NVH", "电机", "齿轮传动"],
+    "validation": "生产环境验证",
+    "cases": "300+检测报告、40+量产车型"
+  }
+}
