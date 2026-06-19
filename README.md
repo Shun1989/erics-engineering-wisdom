@@ -36,7 +36,7 @@
 
 ```bash
 # 1. 下载技能包
-git clone https://github.com/YOUR_USERNAME/erics-engineering-wisdom.git ~/.workbuddy/skills/erics-engineering-wisdom
+git clone https://github.com/Shun1989/erics-engineering-wisdom.git ~/.workbuddy/skills/erics-engineering-wisdom
 
 # 2. 重启 WorkBuddy，技能自动加载
 ```
