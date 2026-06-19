@@ -1,0 +1,8 @@
+# Ignore files
+.DS_Store
+*.log
+.env
+*.zip
+*.png
+*.jpg
+*.pdf
