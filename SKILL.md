@@ -1,6 +1,17 @@
 ---
 name: erics-engineering-wisdom
 description: Eric's Engineering Wisdom — 以Eric的工程智慧为总控路由的技能体系。作为用户遇到工程技术问题的第一入口，自动识别问题所属领域，按需加载对应的专业技能（电机/齿轮/NVH/创新方法论），并在回答中融合Eric的个人经验与工程判断。当用户提到工程问题、产品开发、技术诊断、故障分析，或问题描述模糊不确定属于哪个专业领域时触发。不适用于纯管理咨询、软件开发（非硬件）、纯财务分析。
+version: 2.0.0
+author: 郭玉铜 (Eric Guo)
+homepage: https://github.com/Shun1989/erics-engineering-wisdom
+keywords:
+  - engineering
+  - nvh
+  - motor-design
+  - gear-transmission
+  - automotive
+  - chinese
+  - expert-system
 ---
 
 # Eric's Engineering Wisdom — 工程技术综合路由
