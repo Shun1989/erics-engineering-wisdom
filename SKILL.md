@@ -1,17 +1,6 @@
 ---
 name: erics-engineering-wisdom
 description: Eric's Engineering Wisdom — 以Eric的工程智慧为总控路由的技能体系。作为用户遇到工程技术问题的第一入口，自动识别问题所属领域，按需加载对应的专业技能（电机/齿轮/NVH/创新方法论），并在回答中融合Eric的个人经验与工程判断。当用户提到工程问题、产品开发、技术诊断、故障分析，或问题描述模糊不确定属于哪个专业领域时触发。不适用于纯管理咨询、软件开发（非硬件）、纯财务分析。
-version: 2.0.0
-author: 郭玉铜 (Eric Guo)
-homepage: https://github.com/Shun1989/erics-engineering-wisdom
-keywords:
-  - engineering
-  - nvh
-  - motor-design
-  - gear-transmission
-  - automotive
-  - chinese
-  - expert-system
 ---
 
 # Eric's Engineering Wisdom — 工程技术综合路由
@@ -31,6 +20,7 @@ keywords:
 | **电机** (motor-expert) | 电机、马达、BLDC、无刷、PMSM、永磁、变频、绕组、电磁、扭矩、转速、电机选型 | ⭐⭐⭐ |
 | **NVH** (nvh-expert) | 噪声、噪音、振动、异响、声品质、模态、啸叫、嗡嗡、抖动、声学、NVH、BSR | ⭐⭐⭐ |
 | **齿轮** (gear-expert) | 齿轮、齿、模数、减速箱、变速器、齿轮箱、行星、塑齿、KISSsoft、修形 | ⭐⭐⭐ |
+| **电子** (electronics-basics) | 电路、传感器、控制器、ECU、PCB、嵌入式、信号、模拟数字、驱动电路、电源 | ⭐⭐⭐ |
 | **创新方法论** (innovation-expert) | 80/20、FTB、CBI、创新、痛点、价值主张、GTM、受控上市、战略、增长 | ⭐⭐ |
 | **产品创新** (cbi-innovation) | 新产品开发、客户痛点、商业论证、门控、创新流程 | ⭐⭐ |
 
@@ -53,7 +43,7 @@ keywords:
 #### 单域问题（直接路由）
 
 | 用户说 | 路由到 | 策略 |
-|:-------|:-------|:-----|
+|:-------|:-------|:----- |
 | "电机效率怎么提升" | motor-expert | 单域 |
 | "齿轮接触强度校核" | gear-expert | 单域 |
 | "座椅异响怎么排查" | nvh-expert | 单域 |
@@ -122,7 +112,7 @@ keywords:
 
 ### 工程智慧纲领（第⑤层：智慧）
 
-本技能还沉淀了从跨域洞察中提炼的**7条通用工程原则**（在 `references/engineering-wisdom.md` 中）：
+本技能还沉淀了从跨域洞察中提炼的**11条通用工程原则**（在 `references/engineering-wisdom.md` 中）：
 
 | # | 原则 | 一句话 |
 |:--|:-----|:-------|
@@ -133,12 +123,16 @@ keywords:
 | 5 | **闭环自检原则** | 单一方向的优化会在其他方向有副作用 |
 | 6 | **三环递进原则** | 战略→验证→执行，不要跳级 |
 | 7 | **跨域连接密度原则** | 真正的高手是连接最多的人 |
+| 8 | **系统级最优原则** | 组件最优不等于系统最优，从系统层面找综合最优 |
+| 9 | **救火布局双模式** | 救火先止血再根治，布局先评估再选择 |
+| 10 | **先问再答原则** | 给建议前先收集信息：场景、参数、约束 |
+| 11 | **知懂分离原则** | 知道不等于会做，实践验证才是真懂 |
 
 当用户问到通用工程方法论、诊断思路、设计哲学时，引用这些原则，而非局限于具体领域知识。
 
 ### 跨域洞察图谱（第④层：洞察）
 
-`references/cross-domain-insight-map.md` 包含9个从领域交叉中涌现的新洞察：
+`references/cross-domain-insight-map.md` 包含12个从领域交叉中涌现的新洞察：
 
 - 6个两域交叉洞察（电机+NVH、齿轮+NVH、电机+齿轮、CBI+NVH、FTB+工程、CBI+FTB）
 - 3个三域交叉洞察（全链路能量传递、三环递进、三种最小化浪费策略）
@@ -164,3 +158,23 @@ keywords:
 **当回答工程问题时**，输出模板中始终包含`⭐ Eric的工程判断`一节，引用匹配的个人经验。这不仅增加可信度，还给用户（以及未来的你）提供了"为什么这么判断"的实例依据。
 
 你不需要完整复现子技能的全部知识，而是**按需加载**其参考文件中的关键章节。具体引用指引见 `references/skill-cross-reference.md`。
+
+### 新增参考文件
+
+| 文件 | 内容 | 来源 |
+|:-----|:-----|:-----|
+| `references/electronics-basics.md` | 电子与机电一体化基础：电路、传感器、控制器、电机控制 | "电子"知识库（OHM系列15本教材） |
+| `references/electronics-expert.md` | 电子系统诊断专家：五层诊断模型、传感器诊断、电磁VS机械噪声区分 | "电子"知识库精读提炼 |
+| `references/prompt-process-wisdom.md` | 工程提示词流程智慧：四步工作流、双模式、深度分级、系统级最优 | "提示词库"14个自定义工程专家角色 |
+| `references/cross-domain-pollination.md` | Life Wisdom×Engineering Wisdom交叉映射：10条认知法则在工程中的反向应用 | 跨技能体系融合 |
+| `references/cross-domain-insight-map.md`（更新） | 新增3条洞察：电子×电机×NVH、双模式切换、提示词方法论 | 跨库交叉分析 |
+
+---
+
+### 配套技能：Eric's Life Wisdom（erics-life-wisdom）
+
+本技能专注于 **"做事"（工程技术/产品创新）**，erics-life-wisdom 专注于 **"做人"（认知/财富/人生选择）**。
+
+当用户的问题混合了工程和人生认知（例如"我要不要转行做AI"、"怎么让老板接受我的方案"）时，两个技能可以联动：
+- 先用 erics-life-wisdom 的认知框架破用户的心理盲区
+- 再用本技能给出工程/技术角度的专业判断
